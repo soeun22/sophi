@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADER</title>
+    <style> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
+  
+    {font-family: 'Inter', sans-serif;}
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  mix-width: 1920px;
+  font-family: "Inter";
+}
+
+.navbar{
+  top:0;
+  left:0;
+  height:70px;
+  width:1920px;
+  background-color:#ffffff;
+  position:fixed;
+  z-index:100;
+  width:100%;
+}
+.navbar .innernavbar{
+  position:relative;
+  width:1920px;
+  height:70px;
+  margin:0 auto;
+  text-align:center;
+}
+.navbar .innernavbar .aderlogo{
+  position:absolute;
+  top:0;
+  left:0;
+  padding-top:25px;
+  width:231px;
+  height:40px;
+  margin-left:20px;
+  margin-right:0;
+  margin-top:0;
+  margin-bottom:0;
+  font-size:15px;
+}
+.navbar .innernavbar .aderlogo #logo{
+  display:block;
+  overflow:hidden;
+  width:231px;
+  height:40px;
+  
+}
+.aderlogo #logo img{
+  float:left;
+  margin-left:11px;
+}
+
+.navbar .innernavbar #menu{
+  
+  display:inline-block;
+  padding-top:5px;
+  padding-left:0px;
+  list-style:none;
+  margin:0;
+  
+}
+
+.navbar .innernavbar #menu li{
+  float:left;
+  margin-left:15x;
+  margin-right:15px;
+  margin-top:-50px;
+  margin-bottom:50px;
+  line-height:60px;
+}
+
+.navbar .innernavbar #menu li a {
+  color:#333333;
+  font-size:16px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.info_user{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.info_user .profile{
+  float:left;
+}
+
+
+.info_user .profile .pic{
+    display: inline-block;
+    float:left;
+    width: 40px;
+    height: 40px;
+    background: url(https://i.postimg.cc/zvw2Lx9L/image-22.jpg) no-repeat;
+    
+    vertical-align: top;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-right: -60px;
+}
+
+.info_user .profile .login{
+    float:left;
+    width: 40px;
+    height: 44px;
+    padding: 10px 0px 0px 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+    
+    text-decoration: none;
+}
+.info_user .search{
+      float: right;
+    width: 42px;
+    height: 42px; 
+}
+
+.info_user .search .search_pic{
+    display: block;
+    overflow: hidden;
+    width: 19px;
+    height: 19px;
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 0;
+    text-indent: -9999px;
+    background-image: url(https://i.postimg.cc/vTnXJ0Qq/image-removebg-preview-7-2.jpg);
+}
+
+.helper{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+.info{
+  background-color: line;
+  display: inline-block;
+  vertical-align:middle;  
+}
+
+.container {
+		 	height: 1080px;
+      width:1920px;
+      margin-top: 40px;
+		 	background-color: gray;
+		 	text-align: center;
+		 	background-image: url("https://i.postimg.cc/ZnZ3sym1/herohead.jpg");
+		 	background-size: cover;
+		 	background-position: center center;
+		}
+
+
+.info {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.info h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: medium;
+}
+.info h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: medium;
+}
+.info h4 {
+  color:#0000C5;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: medium;
+}
+.helper{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+.view-product {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 200px;
+	height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  padding: 8px 40px;
+  margin-left: auto;
+	margin-right: auto;
+ 
+}
+.view-product:hover {
+  color: #0000C5;  
+}
+
+.view-product:active {
+  color: #ffffff;
+  border-color: #0000C5;
+}
+.sub-page {
+    text-align: center;
+    color:#203044;
+    font-size: 18px;
+    font-weight: medium;
+    margin-top: 100px;
+    margin-bottom: 80px;
+     }
+.sub-t {
+	position: relative;
+  margin-left: 180px;
+  margin-right: 20px;
+  margin-top: 69px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: medium;
+}
+.mid-img {
+  width:550px;
+  display: inline-block;
+  position:relative;
+  margin:30px 10px 0px 150px;
+  overflow:hidden;
+}
+.mid-img .sec-img{
+  float:left;
+}
+.mid-img .sec-img a{
+  width:100%
+}
+.mid-img .sec-img img{
+  width:550px;
+  position: absolute;
+}
+.mid-img .sec-img .secimage{
+  
+  margin-left:10px;
+  margin-right:10px;
+}
+.mid-img-list{
+  width:550px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.third-t {
+	position: relative;
+  margin-left: 180px;
+  margin-right: 20px;
+  margin-top: 69px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: medium;
+}
+.mid-img-list{
+  width:550px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.finalimg {
+  width:565px;
+  display: inline-block;
+  position:relative;
+  margin:30px 10px 0px 150px;
+  overflow:hidden;
+}
+.fin-infor .fin2-infor .fin3-infor .fin4-infor{
+  float:left;
+}
+.fin-infor .fin2-infor .fin3-infor .fin4-infor a{
+  width:100%
+}
+.fin-infor .fin2-infor .fin3-infor .fin4-infor img{
+  width:565px;
+  position: absolute;
+}
+.clearfix{
+  clear:both;
+}
+.footer{
+  text-align: left;
+  margin-top:120px;
+  margin-bottom:80px;
+  margin-left:10px;
+  margin-right:10px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="innernavbar">
+      <div class="link-container">
+            <div class="helper"></div>
+        <div class="info">
+    
+      <h1 class="aderlogo"> 
+        <a href="#" id="logo">
+        <img src="https://i.postimg.cc/htm82gRW/ADER-LOGO.jpg" height="20">
+        </a>
+        <h1>
+          
+        <ul id="menu">
+          <li><a href="#">New  +</a></li>
+          <li><a href="#">Collection  +</a></li>
+          <li><a href="#">Significant  +</a></li> 
+          <li><a href="#">Origin  +</a></li>
+          <li><a href="#">Shoes & Bag  +</a></li> 
+          
+        </ul>
+      </div>
+        </div>
+        </div>
+        
+        <div class="info_user">
+            <div class="profile">
+              <span class="pic"></span>
+              <a href="#" class="login"></a>
+            </div>
+            <a href="#" class="search">
+              <span class="search_pic"></span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+        
+        
+            
+          <div class="container">
+            <div class="helper"></div><div class="info">
+       
+        <h2><i>But,</h2>
+            <h3>Near Missed Things</h3>
+          <h4>ADER</i></h4>
+            <a href="#" class="view-product">View Product</a>
+            </div>
+      </div>
+        
+       <div class="sub-page">
+        <h5>AderSpace</h5>
+        </div>
+        
+        <div class="sub-t"> 
+         <h6>HOT Keyword</h6>
+        </div>
+        
+       <div class="mid-img">
+         <a href=# class="img">
+         <img src="https://i.postimg.cc/Kj4xkq2c/Group-60.jpg" alt="">
+         </a>
+         
+         <a href=# class="sec-img">
+           <img src="https://i.postimg.cc/0ytgmGVb/Group-69.jpg class=secimage">
+         </a>
+         </div>
+        
+        <div class="third-t"> 
+         <h7>What's new</h7>
+        </div>
+        
+        <div class="finalimg">
+         <a href=# class="fin-infor">
+         <img src="https://i.postimg.cc/Xvc1Cm9f/Group-46.jpg" alt="">
+         </a>
+         
+         <a href=# class="fin2-infor">
+           <img src="https://i.postimg.cc/NFLdZ0SD/Group-68.jpg">
+         </a>
+          <a href=# class="fin3-infor">
+           <img src="https://i.postimg.cc/wxbfLhRG/Group-49.jpg">
+         </a>
+          <a href=# class="fin4-infor">
+           <img src="https://i.postimg.cc/DyJCg8qy/Group-52.jpg">
+         </a>
+         </div>
+        <div class="clearfix"></div>
+        </div>
+      
+      <div class="footer">
+         <div class="service-info">
+           <h2 class="service-name">Company Information</h2>
+           <p>Company ADER | Business Name FIVE SPACE CO.,LTD | Business License 760-87-01757 |<br><br>
+  MAIL-ORDER LICENSE NO. 2021-서울성동-01588 | CEO HANN | Office 2F, 82, Seongsui-ro Seongdong-gu, Seoul, Korea<br><br>
+  
+  C/S office ADER 3F 53, Yeonmujang-gil, Seongdong-gu, Seoul, Korea<br><br>
+  TEL. 02-792-2232 | Office hour Mon - Fri AM 10:00 - PM 5:00<br><br>
+  
+             ©2021 ADER All Rights Reserved</p>
+    </body>
+  </html>
+  </div>
+</body>
+</html>
